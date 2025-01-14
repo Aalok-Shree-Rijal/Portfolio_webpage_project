@@ -161,7 +161,7 @@ li:hover{
     height:28vw;
     border-radius: 50%;
     background-image: linear-gradient(to bottom left,var(--gradient-light) 0%, var(--gradient-mid) 40%, var(--gradient-dark) 100%);
-    animation:myanimation1 9s infinite;
+    animation:myanimation1 15s infinite;
 } 
 
 @keyframes myanimation{
@@ -181,4 +181,16 @@ li:hover{
     0%{margin-left:46vw;}
     50%{ margin-left:46.5vw;}
     100%{margin-left:46vw;}
+}
+
+@media(max-width:1280px){
+    .main_pic{
+        display:none;
+    }
+    .brush_stroke{
+        display:none;
+    }
+    .upper-circle{
+        left:70vw;
+    }
 }
