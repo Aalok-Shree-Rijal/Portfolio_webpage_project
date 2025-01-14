@@ -1,3 +1,3 @@
-function myFunction{
-    console.log("Thanks for Downloading!");
+function myFunction(){
+    alert("Thanks for Downloading");
 }

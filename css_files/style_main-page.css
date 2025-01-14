@@ -1,0 +1,184 @@
+:root{
+    --secondary-text:#867a7a;
+    --normal-text:black;
+    --main-colour:#369D7A;
+    --gradient-dark:#186F4F;
+    --gradient-mid:#3FAB87;
+    --gradient-light:hsl(158, 53%, 80%);
+    --plain-white:white;
+    --hover:#2D3A54;
+    --shadow:grey;
+}
+
+*{
+    transition:ease-in-out 0.2s;
+    box-sizing: border-box;
+}
+
+/* body{
+    overflow:hidden;
+    clip-path: inset(0px);
+} */
+
+.container{
+    position:relative;
+    width: 90vw;
+    height: 90vh;
+}
+
+.navigation{
+    list-style-type:none;
+}
+
+li{
+    display:inline;
+    overflow:hidden;
+    padding:19px;
+    color:var(--hover);
+    font-family:'istok Web';
+    font-size:24px;
+}
+
+li:hover{
+    color:var(--main-colour);
+    cursor:pointer;
+}
+
+.upper-circle{
+    position:relative;
+    top:2vh;
+    left:40vw;
+    max-width:10vw;
+    height:10vw;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom left,var(--gradient-dark) 0%, var(--gradient-mid) 40%, var(--gradient-light) 100%);
+    animation:myanimation 4s infinite;
+}
+
+.moto{
+    color:var(--secondary-text);
+    font-family:Jaldi;
+    font-size:5vh;
+    line-height: 2cm;
+    position:relative;
+    top: -6vh;
+    left:8vw;
+}
+
+.main_text{
+    color:var(--hover);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:14vh;
+    line-height: 2cm;
+    position:relative;
+    top:-13vh;
+    left:8vw;
+    font-family: 'Jersey 25';
+}
+
+.small_intro{
+    font-family: 'Istok Web';
+    font-size:2.7vh;
+    position:relative;
+    left:8.2vw;
+    top:-20vh;
+}
+
+.cv{
+    color:var(--plain-white);
+    background-color: var(--main-colour);
+    padding:0.8vw;
+    max-width:15vw;
+    border-radius:4px;
+    border:solid black 0.01px;
+    font-size:1.6vw;
+    font-family: 'Jersey 25';
+    line-height:50.9%;
+    position:relative;
+    box-shadow: 0 0.5px 1px var(--shadow);
+    left:8vw;
+    top:-19.3vh;
+    letter-spacing: 1px;
+    cursor:pointer;
+}
+
+.cv:hover{
+    animation: 2s ease-in-out smooth;
+    transform:scale(1.1);
+}
+
+.small-c2a{
+    color:var(--hover);
+    background-color: var(--plain-white);
+    padding:0.8vw;
+    max-width:15vw;
+    border-radius:4px;
+    border:solid black 0.01px;
+    font-size:1.6vw;
+    font-family: 'Jersey 25';
+    line-height:50.9%;
+    position:relative;
+    box-shadow: 0 0.5px 1px var(--shadow);
+    left:10vw;
+    top:-19.3vh;
+    letter-spacing: 1px;
+}
+
+.small-c2a:hover{
+    animation:2s ease-in-out smooth;
+    background-color: var(--main-colour);
+    color:var(--plain-white);
+    transform:scale(1.1);
+}
+
+.main_pic{
+    z-index:-1;
+    position:relative;
+    margin-left:45vw;
+    top:-99.5vh;
+    height:110vh;
+    min-width:80vh;
+    display:block;
+}
+
+.brush_stroke{
+    z-index:-2;
+    top:-190vh;
+    display:block;
+    position:relative;
+    margin-left:46vw;
+    height:90vh;
+    max-width:100vh;
+    animation:myanimation2 5s infinite;
+}
+
+.lower-circle{
+    z-index:-15;
+    position:fixed;
+    top:90vh;
+    left:-15vw;
+    width:28vw;
+    height:28vw;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom left,var(--gradient-light) 0%, var(--gradient-mid) 40%, var(--gradient-dark) 100%);
+    animation:myanimation1 9s infinite;
+} 
+
+@keyframes myanimation{
+    0%{top:2vh;}
+    50%{top:15vh;}
+    100%{top:2vh;}
+    
+}
+
+@keyframes myanimation1{
+    0%{top:90vh; left:-15vw;}
+    50%{top:70vh; left:-10vw;}
+    100%{top:90vh; left:-15vw;}
+}
+
+@keyframes myanimation2{
+    0%{margin-left:46vw;}
+    50%{ margin-left:46.5vw;}
+    100%{margin-left:46vw;}
+}
