@@ -136,8 +136,10 @@ li:hover{
     position:relative;
     margin-left:45vw;
     top:-99.5vh;
-    height:110vh;
-    min-width:80vh;
+    height:auto;
+    width:100%;
+    max-width:500px;
+    /* min-width:80vh; */
     display:block;
 }
 
@@ -183,14 +185,26 @@ li:hover{
     100%{margin-left:46vw;}
 }
 
-@media(max-width:1280px){
+@media(min-width:15px) and (min-height:420px){
     .main_pic{
-        display:none;
+        display:block;
     }
     .brush_stroke{
-        display:none;
+        display:block;
     }
     .upper-circle{
-        left:70vw;
+        left:40vw;
+    }
+}
+
+@media(max-height:527px){
+    .main_pic{
+        display:block;
+    }
+    .brush_stroke{
+        display:block;
+    }
+    .upper-circle{
+        left:40vw;
     }
 }
